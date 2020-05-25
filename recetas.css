@@ -1,0 +1,143 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.recetas{
+	font-family: 'ope sans';
+}
+.recetas h1{
+color: #F64F63; 
+	text-align: center;
+	margin: 80px 0 5px 0;
+	font-weight: 600%;
+}
+.linea{
+	border-top: 5px solid #FFE264;
+	margin-bottom: 40px;
+}
+.contenedor-recetas{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius:3px;
+
+}
+.contenedor-recetas .imagen{
+	width: 32%;
+	position: relative;
+	height: 250px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 3px  0px rgba(0,0,0,.75);
+}
+.imagen img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.overlay img{
+	width: 125px;
+	height: 125px;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(254,180,205,0.5);
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	transition: .5s ease;
+}
+.overlay h2{
+	color: #fff;
+	font-weight: 300;
+	font-size: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+.imagen:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+}
+/*******************estilos2**************************/
+#man-container #ingredientes{
+	width: 30%;
+	vertical-align: top;
+	display: inline-block;
+}
+#man-container #preparacion{
+	width: 30%;
+	vertical-align: top;
+	display: inline-block;
+}
+/**************************************************/
+{
+	margin: 20%;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contenedor{
+	font-family: 'ope sans';
+}
+.titulo {
+    color: #FC70A3; 
+	text-align: center;
+	margin: 20px 0 15px 0;
+	font-weight: 600%;
+}
+.sub-titulo{
+	color: #FC70A3; 
+	margin: 20px 0 15px 0;
+	font-weight: 600%;
+}
+.preparacion{
+	color: #FC70A3; 
+	margin: 20px 0 15px 0;
+	font-weight: 600%;}
+.contenedor img{
+	width: 500px;
+	height: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.contenedor p{
+	text-align: justify;
+	font-size: 19px;
+	font-weight: 100;
+	margin-top: 20px;
+}
+/**************************************************/
+@media screen and (max-width:1000px){
+	.contenedor-recetas{
+		width: 95%;
+	}
+
+}
+@media screen and (max-width:700px){
+	.contenedor-recetas{
+		width: 90%;
+	}
+	.contenedor-recetas .imagen{
+		width: 48%;
+	}
+}
+@media screen and (max-width:450px){
+	h1{
+		font-size:22px;
+	}
+	.contenedor-recetas{
+		width: 98%;
+	}
+	.contenedor-recetas .imagen{
+		width: 80%;
+	}
+}

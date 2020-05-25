@@ -1,0 +1,70 @@
+.postre {
+  width: 90%;
+  background-color: #FFF7F7; /*color del menu*/
+  margin: auto;
+  overflow: hidden;/*el contenido es recortado*/
+}
+.postre img{
+  width: 60%;
+  float: left;
+}
+.postre p, h1{
+width: 30%;
+float: right;
+text-align: justify;
+}
+.postre p{
+  font-size: 18px;
+}
+/*************************************/
+#info h3{
+text-decoration: none;
+}
+#info{
+  color: #fff;
+  text-align: center;/*alineacion del texto*/
+  padding: 20px;/*padding:espacio interior*/
+}
+#info .contenedor{
+  display: flex;/*las imagines estan en una sola linea*/
+  flex-wrap: wrap;/*cuando un elemento no encaje arriba
+  este baje*/
+  justify-content: center;/*define cómo el navegador distribuye el espacio
+entre y alrededor de los items flex, a lo largo del eje principal de su contenedor.*/
+}
+.info-pet{
+  margin: 20px;/*margen*/
+}
+.info-pet img{
+  width: 230px;
+  height: 250px;
+  border:1px solid #fff;
+}
+@media(max-width: 500px){
+  .info-pet{
+    width: 40%;
+  }
+    .postre{
+    width: 100%;
+  }
+  .postre h1{
+text-align: justify;
+float: none;
+  }
+  .postre p{
+  text-align: justify;
+  float: none;
+  font-size: 22px;
+  width: 100%;
+}
+.postre img{
+  float: none;
+  width: 100%;
+}
+  }
+
+@media(max-width: 1024px){
+  .info-pet{
+    width: auto;
+  }
+}
